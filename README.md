@@ -1,29 +1,36 @@
-## Project_8-Prediction_of_Obesity_Levels
+## Project_8-Prediction_of_Daily_Productivity
 ## Description
 ### Context
 
-Dataset for estimation of obesity levels based on eating habits and physical condition in individuals from Colombia, Peru and Mexico
+Productivity Prediction of Garment Employees
 
 ### Null hypothesis: 
-There is no relationship between obesity levels and physical condition including eating habits
 
-Explore the data for trends in the data to predict obesity levels or find any clear indications of relationships between the predictors.
+
+Explore the data for trends in the data  or find any clear indications of relationships between the predictors.
 
 ### Content
-The dataset contains data for the estimation of obesity levels in people from the countries of Mexico, Peru and Colombia, with ages between 14 and 61 and diverse eating habits and physical condition as mentioned by [1], data was collected using a web platform with a survey (see Table 1 in the attached paper) where anonymous users answered each question, then the information was processed obtaining 17 attributes and 2111 records, after a balancing process.
+The medical Garment Industry embeds  new electronic fabrics, blended with conductive materials that are used in high-tech clothes, intelligent medical garments
+Applications for the health sector include clothes with external monitoring systems worn by patients with chronic diseases. 
+Telemedicine provides the possibility to stay in contact with their health care provider for medical advice.It is a highly labour-intensive industry with lots of manual processes. Satisfying the huge global demand for garment products is mostly dependent on the production and delivery performance of the employees in the garment manufacturing companies. So, it is highly desirable among the decision makers in the garments industry to track, analyse and predict the productivity performance of the working teams in their factories. This dataset can be used for regression purpose by predicting the productivity range (0-1) or for classification purpose by transforming the productivity range (0-1) into different classes
 
-The attributes related with eating habits are: 
-1. Frequent consumption of high caloric food (FAVC) 
-2. Frequency of consumption of vegetables (FCVC)
-3. Number of main meals (NCP), Consumption of food between meals (CAEC)
-4. Consumption of water daily (CH20), and Consumption of alcohol (CALC). 
-The attributes related with the physical condition are: 
-5. Calories consumption monitoring (SCC) 
-6. Physical activity frequency (FAF) 
-7. Time using technology devices (TUE)
-8. Transportation used (MTRANS)
-other variables obtained were: 
-9. Gender, Age, Height and Weight.
+Attribute Information:
+
+1. date : Date in MM-DD-YYYY
+2. day : Day of the Week
+3. quarter : A portion of the month. A month was divided into four quarters
+4. department : Associated department with the instance
+5.  team_no : Associated team number with the instance
+6. no_of_workers : Number of workers in each team
+7. no_of_style_change : Number of changes in the style of a particular product
+8. targeted_productivity : Targeted productivity set by the Authority for each team for each day.
+9. smv : Standard Minute Value, it is the allocated time for a task
+10. wip : Work in progress. Includes the number of unfinished items for products
+11. over_time : Represents the amount of overtime by each team in minutes
+12. incentive : Represents the amount of financial incentive (in BDT) that enables or motivates a particular course of action.
+13. idle_time : The amount of time when the production was interrupted due to several reasons
+14. idle_men : The number of workers who were idle due to production interruption
+15. actual_productivity : The actual % of productivity that was delivered by the workers. It ranges from 0-1.
 
 Finally, all data was labeled and the class variable NObesity was created with the values of: Insufficient Weight, Normal Weight, Overweight Level I, Overweight Level II, Obesity Type I, Obesity Type II and Obesity Type III, based on Equation  and information from WHO and Mexican Normativity. 
 
